@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Nunito:wght@300;400;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", serif;
+    
+}
+
+html {
+    font-size: 62.5%;
+
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #fff;
+    overflow-x: hidden;
+
+}
+
+
+.active {
+    color: #FB923C;
+}
+
+.r {
+    font-family: "Nunito";
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FB923C;
+    border-radius: 4px;
+}
+
+/* For Firefox */
+::-moz-scrollbar {
+    width: 8px;
+}
+
+::-moz-scrollbar-thumb {
+    background-color: #FB923C;
+    border-radius: 4px;
+}
+
+.youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    border: none;
+    border-radius: 60px;
+    padding: 40px;
+    border: 1px solid rgb(205, 196, 196);
+}
+
+.vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
+    @apply bg-[#fc7b54] text-[white] rounded-[10px];
+}
+
+.vertical-timeline-element-date {
+    @apply text-[black] dark:text-lightText font-[bold];
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background-color: #0c0513;
+    background-image: url(./Assets/loader.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#preloader-none {
+    opacity: 0;
+}
+
+
+
